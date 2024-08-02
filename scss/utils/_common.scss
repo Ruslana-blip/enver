@@ -1,0 +1,149 @@
+html,
+body {
+	min-width: 375px;
+}
+body {
+	font-family: 'NunitoSans';
+	font-size: 1.25rem;
+	line-height: 1.75;
+	font-weight: 400;
+	color: $white;
+	background-color: $dark_blue;
+}
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+[class*='__container'] {
+	max-width: 347px;
+	padding: 0 10px;
+	margin: 0 auto;
+	@media (min-width: $sm) {
+		max-width: 900px;
+	}
+	@media (min-width: $xl) {
+		max-width: 75rem;
+	}
+}
+header {
+}
+.page {
+	position: relative;
+	flex: 1 1 auto;
+	.about {
+		margin-top: 50px;
+		margin-bottom: 114px;
+		@media (min-width: $xl) {
+			margin-bottom: 150px;
+		}
+		&__decor-blue {
+			position: absolute;
+			transform: rotate(-42deg);
+			background: rgb(32, 32, 47);
+			background: linear-gradient(
+				133deg,
+				rgba(32, 32, 47, 1) 0%,
+				rgba(43, 36, 53, 1) 100%
+			);
+			filter: blur(300px);
+			z-index: -1;
+			border-radius: 233px;
+			width: 252px;
+			height: 666px;
+			top: 0;
+			left: 0;
+			@media (min-width: $xl) {
+				transform: rotate(-55deg);
+				height: 1234px;
+				width: 467px;
+				top: -253px;
+				left: 330px;
+			}
+		}
+		&__decor-yellow {
+			position: absolute;
+			transform: rotate(45deg);
+			background: #e05789;
+			background: linear-gradient(45deg, #e05789, #fba91c);
+			z-index: -1;
+			border-radius: 233px;
+			width: 215px;
+			height: 644px;
+			top: 320px;
+			right: 100px;
+			filter: blur(300px);
+			opacity: 0.2;
+			@media (min-width: $xl) {
+				transform: rotate(66deg);
+				width: 467px;
+				height: 1400px;
+				top: 0;
+				right: 400px;
+				opacity: 0.1;
+			}
+		}
+	}
+	.why {
+		margin-bottom: 78px;
+		@media (min-width: $md) {
+			margin-bottom: 0;
+		}
+		@media (min-width: $xl) {
+			margin-bottom: 38px;
+		}
+	}
+	.servises {
+		position: relative;
+		margin-bottom: 112px;
+		@media (min-width: $xl) {
+			margin-bottom: 90px;
+		}
+		&__decor-blue {
+			display: none;
+			@media (min-width: $xl) {
+				display: block;
+				width: 467px;
+				height: 508px;
+				transform: rotate(-54deg);
+				border-radius: 233px;
+				background-color: #5454d4;
+				opacity: 0.21;
+				filter: blur(300px);
+				position: absolute;
+				top: 0;
+				left: -200px;
+			}
+		}
+	}
+	.slider {
+		position: relative;
+		margin-bottom: 100px;
+		&__decor-blue {
+			display: none;
+			@media (min-width: $xl) {
+				display: block;
+				width: 600px;
+				height: 652px;
+				background-color: #5454d4;
+				border-radius: 233px;
+				transform: rotate(-126deg);
+				filter: blur(300px);
+				opacity: 0.2;
+				position: absolute;
+				top: -50%;
+				right: 0;
+			}
+		}
+	}
+	.contact {
+		background-color: #1c1b1d;
+	}
+}
+.footer {
+	margin: 80px 0 50px 0;
+	@media (min-width: $md) {
+		margin: 0 0 30px 0;
+	}
+}
